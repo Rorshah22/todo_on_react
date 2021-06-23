@@ -1,7 +1,5 @@
 import { Component } from 'react';
 
-import './navigation.css';
-
 export default class Navigation extends Component {
   buttons = [
     { name: 'all', label: 'All' },

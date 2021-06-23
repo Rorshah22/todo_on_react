@@ -2,8 +2,6 @@ import React from 'react';
 import AddTask from '../add-task/add-task';
 import ToDoList from '../todo-list/todo-list';
 
-import './main.css';
-
 const Main = ({
   todos,
   handleOnDeleted,

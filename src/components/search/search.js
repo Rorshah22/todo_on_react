@@ -2,8 +2,6 @@ import React, { Component } from 'react';
 
 import logo from '../../images/content/logo.svg';
 
-import './search.css';
-
 export default class Search extends Component {
   state = {
     term: '',

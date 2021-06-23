@@ -3,8 +3,6 @@ import Navigation from '../navigation/navigation';
 
 import Search from '../search';
 
-import './Header.css';
-
 const Header = ({ searchItem, filter, onFilterChange }) => {
   return (
     <header className="header">

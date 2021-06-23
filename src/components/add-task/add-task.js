@@ -1,7 +1,5 @@
 import React, { Component } from 'react';
 
-import './add-task.css';
-
 export default class AddTask extends Component {
   state = {
     value: '',
