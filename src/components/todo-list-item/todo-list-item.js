@@ -16,15 +16,14 @@ export default class ToDoListItem extends Component {
     let textBtnMark = 'MARK IMPORTANT';
     let classLi = 'todo-task';
 
-    if (done) {
-      classP += ' done-task';
-      classBtnMark += ' btn-mark-important-hidden';
-    }
-
     if (important) {
-      classP += ' mark-important';
+      classP += '1 mark-important ';
       classBtnMark += ' btn-mark-not-important';
       textBtnMark = 'NOT IMPORTANT';
+    }
+    if (done) {
+      classP += ' done-task ';
+      classBtnMark += ' btn-mark-important-hidden';
     }
 
     return (
