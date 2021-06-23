@@ -21,7 +21,9 @@ export default class Search extends Component {
     return (
       <form className="form" onSubmit={this.handleSubmit}>
         <label htmlFor="search">
-          <img className="logo" src={logo} alt="логотип компании Senla" />
+          <a href="index.html">
+            <img className="logo" src={logo} alt="логотип компании Senla" />
+          </a>
         </label>
         <input
           id="search"
