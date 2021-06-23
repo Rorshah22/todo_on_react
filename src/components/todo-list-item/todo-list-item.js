@@ -28,10 +28,8 @@ export default class ToDoListItem extends Component {
     }
 
     return (
-      <li className={classLi}>
-        <p className={classP} onClick={handelOnLiClick}>
-          {label}
-        </p>
+      <li className={classLi} onClick={handelOnLiClick}>
+        <p className={classP}>{label}</p>
         <button className={classBtnMark} onClick={handelOnMarkImportant}>
           {textBtnMark}
         </button>

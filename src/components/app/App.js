@@ -3,8 +3,6 @@ import React, { Component } from 'react';
 import Header from '../header';
 import Main from '../main';
 
-
-
 export default class App extends Component {
   state = {
     todoData: [],
@@ -28,7 +26,8 @@ export default class App extends Component {
     });
   };
 
-  handelOnLiClick = (id) => {
+  handelOnLiClick = (id, event) => {
+    if (event.target.tagName === 'BUTTON') return;
     this.setState(({ todoData }) => {
       const indx = todoData.findIndex((el) => el.id === id);
 

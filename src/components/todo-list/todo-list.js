@@ -15,7 +15,7 @@ const ToDoList = ({
         key={id}
         {...itemProps}
         handleOnDeleted={() => handleOnDeleted(id)}
-        handelOnLiClick={() => handelOnLiClick(id)}
+        handelOnLiClick={(event) => handelOnLiClick(id, event)}
         handelOnMarkImportant={() => handelOnMarkImportant(id)}
       />
     );
