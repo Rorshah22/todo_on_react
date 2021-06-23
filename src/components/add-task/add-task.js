@@ -19,7 +19,9 @@ export default class AddTask extends Component {
       this.handleSubmit(event);
     }
   };
+
   render() {
+    const dis = this.state.value === '' ? true : false;
     return (
       <section className="field-add-task">
         <form
@@ -39,7 +41,7 @@ export default class AddTask extends Component {
       Осталось символов: <output className="char-length">120</output>{' '}
     </span> */}
 
-          <button type="submit" className="btn btn-add-task">
+          <button type="submit" className="btn btn-add-task" disabled={dis}>
             ADD
           </button>
         </form>

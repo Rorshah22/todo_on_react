@@ -22,7 +22,7 @@ const ToDoList = ({
   });
   return (
     <section className="list">
-      <ul className="todo-list">{elements}</ul>
+      <ul className="todo-list">{elements.reverse()}</ul>
     </section>
   );
 };

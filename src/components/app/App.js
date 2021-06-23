@@ -78,7 +78,6 @@ export default class App extends Component {
     };
 
     this.setState(({ todoData }) => {
-      if (!text) return;
       const newArray = [...todoData, newTask];
       localStorage.setItem('todoData', JSON.stringify(newArray));
       return { todoData: newArray };
@@ -114,7 +113,6 @@ export default class App extends Component {
       default:
         return items;
     }
-    // localStorage.setItem('navigation', JSON.stringify(navigation));
   }
 
   componentDidMount() {
@@ -125,7 +123,6 @@ export default class App extends Component {
     this.setState({ todoData });
   }
   render() {
-    // this.state.todoData = this.localSt;
     const { todoData, term, navigation } = this.state;
 
     const visibleItems = this.filter(this.search(todoData, term), navigation);
