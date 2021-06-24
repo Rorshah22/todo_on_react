@@ -82,12 +82,15 @@
   margin: 0;
   padding-right: 5px;
   margin-right: auto;
-  max-width: 480px;
+  max-width: 680px;
   word-wrap: break-word;
 }
 
 .todo-task:hover {
   cursor: pointer;
+  .todo-task__text {
+    max-width: 480px;
+  }
   .btn-mark-important,
   .btn-clear {
     display: block;
