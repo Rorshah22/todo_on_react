@@ -6,6 +6,9 @@ export default class AddTask extends Component {
   };
 
   handleChange = (event) => {
+    if (event.target.value.trim().length === 0) {
+      alert('contains only spaces!');
+    }
     this.setState({ value: event.target.value });
   };
 
