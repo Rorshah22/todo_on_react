@@ -88,6 +88,7 @@
 
 .todo-task:hover {
   cursor: pointer;
+  max-width: 100%;
   .todo-task__text {
     max-width: 480px;
   }
